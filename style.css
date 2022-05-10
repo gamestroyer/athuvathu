@@ -1,0 +1,37 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(4, 6, 15);
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.menu > *{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 140%;
+    padding: 40px;
+}
+
+.navbar{
+    height: 10%;
+    margin: 0cm;
+    padding: 0cm;
+
+}
+canvas{
+    display: block;
+}
