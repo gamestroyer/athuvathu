@@ -8,14 +8,12 @@ let gridHeight;
 let fontSize = 48;
 
 function setup() {
-    createCanvas(windowWidth, windowHeight * 0.9);
+    createCanvas(windowWidth, windowHeight * 0.93);
     gridWidth = floor(width / (radius * 2));
     gridHeight = floor(height / (radius * 2));
-    print(gridHeight, gridWidth)
+
     createGrid(gridWidth, gridHeight, radius);
-    print(cells)
-    print(cells[0])
-    print(findNeighbours(cells[0]))
+
     stroke(255)
     angleMode(DEGREES);
 }
