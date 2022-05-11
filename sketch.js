@@ -1,7 +1,7 @@
 
 let radius = 10;
 let cells = [];
-let speed = 7;
+let speed = 5;
 let gridWidth;
 let gridHeight;
 
@@ -42,6 +42,7 @@ class Cell{
         this.y = y;
         this.rad = rad;
         this.ang = 0;
+        this.newAng = 0;
     }
     draw() {
         let coordx = this.x * this.rad * 2 + this.rad;
@@ -56,7 +57,10 @@ class Cell{
         for (let i = 0; i < neighbours.length; i++) {
             sum += neighbours[i].ang;
         }
-        this.ang = sum / neighbours.length;
+        this.newAng = sum / neighbours.length;
+    }
+    actuallyUpdate() {
+        this.ang = this.newAng;
     }
 }
 
@@ -73,6 +77,9 @@ class RogueCell extends Cell {
         this.ang += this.speed;
         //this.ang = this.ang % 360;
     }
+    actuallyUpdate() {
+        this.ang = this.ang;
+    }
 }
 
 function show() {
@@ -86,9 +93,9 @@ function step() {
     for (let i = 0; i < cells.length; i++) {
         cells[i].update();
     }
-    // for (let i = 0; i < cells.length; i++) {
-    //     cells[i].actualllyUpdate();
-    // }
+    for (let i = 0; i < cells.length; i++) {
+        cells[i].actuallyUpdate();
+    }
 }
 
 function createGrid(x, y, r) {

@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 0;
     color: white;
-    background-color: rgb(4, 6, 15);
+    background-color: rgb(8, 10, 15);
     font-family: 'Roboto', sans-serif;
     height: 100%;
 }
@@ -16,6 +16,8 @@ body{
     justify-content: center;
     align-items: center;
     height: 100%;
+    background-color: rgb(4, 6, 15);
+    gap: 10%;
 }
 
 .menu > *{
@@ -23,7 +25,6 @@ body{
     text-decoration: none;
     font-weight: bold;
     font-size: 120%;
-    padding: 10%;
 }
 
 .navbar{
