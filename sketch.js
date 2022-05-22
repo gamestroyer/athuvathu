@@ -108,6 +108,7 @@ function createGrid(x, y, r) {
             }
         }
     }
+    cells[int(random(x * y - 1))] = new RogueCell(j, i, r, speed);
 }
 
 function findNeighbours(circle) {
