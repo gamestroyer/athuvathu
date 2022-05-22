@@ -101,7 +101,7 @@ function step() {
 function createGrid(x, y, r) {
     for (let i = 0; i < y; i++) {
         for (let j = 0; j < x; j++) {
-            if (random(1) > 0.003) {
+            if (random(1) > 0.01) {
                 cells.push(new Cell(j, i, r));
             } else {
                 cells.push(new RogueCell(j, i, r, speed));
