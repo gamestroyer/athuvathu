@@ -9,12 +9,12 @@ let fontSize = 48;
 
 function setup() {
     createCanvas(windowWidth, windowHeight * 0.93);
-    gridWidth = floor(width / (radius * 2));
-    gridHeight = floor(height / (radius * 2));
+    gridWidth = int(width / (radius * 2));
+    gridHeight = int(height / (radius * 2));
 
     createGrid(gridWidth, gridHeight, radius);
 
-    stroke(255)
+    stroke(255);
     angleMode(DEGREES);
 }
 

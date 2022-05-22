@@ -1,0 +1,11 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    height: 93%;
+}
+#shit{
+    font-size: 200%;
+    text-align: center;
+}
