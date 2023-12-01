@@ -32,7 +32,7 @@ function nameDisplay() {
     textAlign(CENTER);
     text('Atharva Gupta', width / 2, height / 2);
     textSize(fontSize/3)
-    text('professional idiot', width / 2, (height+ fontSize)/2);
+    text('professional dumbass', width / 2, (height+ fontSize)/2);
 }
 
 
